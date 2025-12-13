@@ -30,6 +30,8 @@ kops update cluster --name reyaz.k8s.local --yes --admin
 
 wq!
 
+sh kops.sh
+
 export KOPS_STATE_STORE=s3://reyaz-kops-testbkt1433.k8s.local
 kops validate cluster --wait 10m
 
